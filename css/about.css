@@ -1,0 +1,594 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#wrapper{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}
+.gold{
+    color: gold;
+}
+.thictext{
+    font-weight: 600;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.main-header .gb-nav ul li a.featured{
+    color: white;
+}
+.footer-nav ul li a.featured-inv{
+    color: gold;
+}
+
+
+
+
+
+
+
+
+
+
+.main-header{
+    display: flex;
+    background-color: gold;
+    align-items: center;
+    padding: 20px 10%;
+}
+.main-header .main-logo img{
+    height: 10vh;
+}
+.main-header .nav-trig{
+    display: none;
+}
+.main-header .gb-nav{
+    margin-left: auto;
+}
+.main-header .gb-nav ul{
+    display: flex;
+    align-items: center;
+}
+.main-header .gb-nav ul li a{
+    padding: 10px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+.main-header .gb-nav ul li a:hover{
+    color: white;
+}
+
+
+.hero-banner{
+    background-image: url("../img/about-hero-image.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+}
+.hero-banner h2{
+    font-size: 40px;
+    padding: 10px;
+}
+.hero-banner h3{
+    font-size: 30px;
+    color: gold;
+    padding: 10px;
+}
+
+.about-company{
+    padding: 150px 10%;
+}
+.about-company h3{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.about-company p{
+    font-size: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.order-steps{
+    padding: 100px 20%;
+    background-color: gold;
+
+}
+.order-steps h3{
+    font-size: 35px;
+    font-weight: 600;
+}
+.order-steps .steps{
+    display: flex;
+    flex-direction: column;
+}
+.order-steps ol{
+    display: flex;
+    padding: 20px;
+}
+.order-steps ol li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    padding: 10px;
+    margin: 20px;
+    border: 4px solid slategray;
+    background-color: white;
+    border-radius: 15px;
+
+}
+.order-steps ol li h4{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+    /* color: white; */
+}
+.order-steps ol li img{
+    width: 100%;
+    border-radius: 10px;
+}
+.order-steps ol li p{
+    font-size: 18px;
+    /* color: white; */
+    padding: 10px;
+}
+.order-steps .final-step{
+    margin: 0px 45px 45px 45px;
+    border-radius: 30px;
+    border: 4px solid slategray;
+    overflow: hidden;
+    background-image: url("../img/enjoy-delivery.jpg");
+    background-size: cover;
+    background-position: right;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.order-steps .final-step h5{
+    color: white;
+    font-size: 35px;
+    margin-left: 8%;
+}
+
+footer{
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    background-color: slategray;
+    
+}
+.footer-logos .main-logo{
+    height: 100px;
+}
+.footer-logos .app-download{
+    margin-top: 20px;
+}
+.footer-logos .app-download img{
+    height: 50px;
+}
+.footer-nav{
+    text-align: right;
+    font-size: 25px;
+}
+.footer-nav ul li{
+    line-height: 1.2;
+}
+.footer-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer-nav ul li a:hover{
+    color: gold;
+}
+
+@media (max-width:1441px){
+    .order-steps{
+        padding: 100px 10%;
+    }
+    .order-steps ol{
+        padding: 0px;
+    }
+    .order-steps .final-step{
+        margin:0px 20px 45px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    background-image: url("../img/contact-hero-image.jpg");
+    background-size: cover;
+    align-items: flex-end;
+}
+.contact-hero{
+    justify-content: right;
+}
+.form-help{
+    padding: 100px 15%;
+}
+.form-help h3{
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+}
+.form-help h4{ 
+    font-size: 28px;
+}
+.form-help form{
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+}
+.form-help .form-row{
+    background: slategray;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid slategray;
+    color: white;
+
+}
+/* .form-help .form-row.one-line{
+    display: flex;
+    align-items: center;
+} */
+.form-left{
+    flex-basis: 30%;
+    padding-right: 15px;
+    text-align: right;
+}
+.form-right{
+    flex-basis: 70%;
+    height: 50px;
+}
+.form-help .radio{
+    display: flex;
+    align-items: center;
+}
+.form-help .radio label, .radio input{
+    padding: 0 15px;
+}
+.form-help label{
+    font-size: 25px;
+}
+input[type=text],input[type=radio],input[type=email],textarea,option,select{
+    font-size: 20px;
+}
+.textarea{
+    height: 100px;
+}
+input[type=submit]{
+    font-size: 25px;
+    border-radius: 10px;
+    background-color:slategray;
+    color:white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: block;
+}
+
+.accordion__header {
+	padding: 1em;
+	background-color: #ccc;
+	margin-top: 2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+.accordion__header > * {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+.accordion__header.is-active {
+	background-color: #000;
+	color: #fff;
+}
+
+.accordion__toggle {
+	margin-left: 10px;
+	height: 3px;
+	background-color: #222;
+	width: 13px;
+	display: block;
+	position: relative;
+	flex-shrink: 1;
+	border-radius: 2px;
+}
+
+.accordion__toggle::before {
+	content: "";
+	width: 3px;
+	height: 13px;
+	display: block;
+	background-color: #222;
+	position: absolute;
+	top: -5px;
+	left: 5px;
+	border-radius: 2px;
+}
+
+.is-active .accordion__toggle {
+	background-color: #fff;
+}
+.is-active .accordion__toggle::before {
+	display: none;
+}
+
+
+.accordion__body {
+	display: none;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-top: 0;
+    height: 0;
+    transition: height 0.5s linear;
+}
+.accordion__body.is-active {
+	display: block;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.main-header .aboslutezero{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.hero-banner.business{
+    background-image: url("../img/business-hero-image.jpg");
+    height: 80vh;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-banner.business h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+.miniform{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+}
+.miniform{
+    color: black;
+    padding: 10px 20px;
+}
+.miniform h3{
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.miniform label{
+    font-size: 25px;
+}
+.miniform input[type=text]{
+    font-size: 25px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.miniform input{
+    margin-bottom: 25px;
+}
+.miniform p{
+    font-size: 20px;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+.miniform input[type=submit]{
+    width: 100%;
+    background-color: gold;
+    color: black;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+
+.reasons-to-join{
+    padding: 100px 10%;
+}
+.reasons-to-join ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.reasons-to-join ul li{
+    flex-basis: 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reason-item img{
+    height:150px;
+    margin-bottom: 25px;
+}
+.reason-item h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.reason-item p{
+    font-size: 18px;
+}
+
+.business-steps{
+    margin: 50px 10% 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.business-steps .business-steps-image{
+    flex-basis: 50%;
+    width: 50%;
+}
+.business-steps .steps{
+    flex-basis: 50%;
+}
+.business-steps .steps li{
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: slategray;
+}
+.business-steps .steps li:nth-of-type(even){
+    background-color: lightslategray;
+}
+.business-steps .steps li .steps-number{
+    font-size: 50px;
+    background-color: gold;
+    color: black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.business-steps .steps li .steps-number p{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.business-steps .steps li .step-description h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+.business-steps .steps li .step-description p{
+    font-size: 18px;
+    color: white;
+}
+
+.partners{
+    padding: 100px 0;
+}
+.vendors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5%;
+}
+.partners h3{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+.vendors img{
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+}
+.business-form{
+    margin: 200px 10%;
+    padding: 100px 10%;
+    background-color: slategray;
+    border-radius: 50px;
+}
+.business-form h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.business-form form{
+    padding: 20px 10%;
+}
+.business-form .form-row{
+    background: white;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid slategray;
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.business-form .form-row .form-left {
+    flex-basis: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.business-form .form-row .form-right{
+    flex-basis: 65%;
+}
+.business-form .form-row label{
+    font-size: 25px;
+    background-color: gold;
+    height: 100%;
+
+}
+.business-form input{
+    height: 50px;
+    border: 1px solid white;
+}
+.business-form input[type=text],select,input[type=tel],input[type=email],option{
+    font-size: 20px;
+    border: white;
+}
+.business-form input[type=submit]{
+    font-size: 25px;
+    background-color: gold;
+    border: none;
+    color: black;
+    width: 20%;
+}

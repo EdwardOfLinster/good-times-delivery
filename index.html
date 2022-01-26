@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Times Delivery</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/68e4d43405.js" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <div id="wrapper">
+    <header>
+        <div id="referal-info">
+            <i></i>
+            <p>Invite a friend to get $10 off a $20 order</p>
+            <a class="remove-referal-info" onclick="delInfo()"><i class="far fa-times-circle"></i></a>
+        </div>
+
+        <!-- CG: put both of these in a container since we are using relative references, this way when the referal is hidden this container shifts-->
+        <div class="header-container">
+            <nav class="gb-nav" id="gb-nav">
+                <div class="nav-trigger">
+                    <a id="nav-open"><i class="fas fa-bars"></i></a>
+                </div>
+                <ul class="nav-list">
+                    <a id="nav-close" style="text-align: right;"><i class="fas fa-times-circle"></i></a>
+                    <li><a href="about.html" title="About Good Times Delivery">About</a></li>
+                    <li><a href="contact.html" title="Get Help with our Services">Get Help</a></li>
+                    <li><a href="business.html" title="Inquire about adding your Dispensary or Liquor Store">Add Your Business</a></li>
+                </ul>
+            </nav>
+
+            <div class="gb-head">
+                <div id="hero-image" class="hero-image">
+                    <div id="background-contrast" class="background-contrast"></div>
+
+                    <div id="hero-text" class="hero-text">
+                        <img src="img/logo.png" alt="Happy Times Logo -Illustrated by (brycemaloney.ca)">
+                        <h3>Discover the best alcohol & cannabis from over 1,000 vendors and fast delivery to your place.</h3>
+                        <h4>With our new App, ordering has never been easier</h4>
+                        <a href="#">Download Now</a>
+                    </div>    
+                </div>
+                
+            </div>
+        </div>
+        
+    </header>
+
+    
+    <main>
+        <section class="service-area-info">
+            <div class="row">
+                <h3>We have our services set up in many cities across British Columbia.</h3>
+                <h4>See if we service your area!</h4>
+                <input placeholder="A1B2C3" type="search" maxlength="6" size="6" id="postalCode"><input type="submit" value="Go" onClick="serviceCheck()">
+                <p id="pcodeError">Please enter your postal code in the correct format!</p>
+            </div>
+        </section>
+        <section class="vendors">
+            <div>
+                <img src="img/vendors/ar-cannabis.png">
+            </div>
+            <div>
+                <img src="img/vendors/bc-liquor.png">
+            </div>
+            <div>
+                <img src="img/vendors/choom-cannabis.png">
+            </div>
+            <div>
+            <img src="img/vendors/broadway-liquor.png">
+            </div>
+            <div>
+                <img src="img/vendors/city-cannabis.png">
+            </div>
+            <div>
+                <img src="img/vendors/cascadia-liquor.png">
+            </div>
+            <div>
+                <img src="img/vendors/lin-cannabis.png">
+            </div>
+            <div>
+                <img src="img/vendors/dollar-liquor.png">
+            </div>
+        </section>
+        <section class="areas-serviced" id="service">
+            <h2 id="serviceArea">Areas we Service</h2>
+            <iframe src="https://www.google.com/maps/d/embed?mid=16kDCY_FeIu2n5HBbN9FK0KNSK1lXuDET" ></iframe>
+        </section>
+        <footer>
+            <div class="footer-logos">
+                <img src="img/logo.png" class="main-logo">
+                <div class="app-download">
+                    <img src="img/800px-Download_on_the_App_Store_Badge.svg.png">
+                    <img src="img/en_badge_web_generic.png">
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav> 
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Get Help</a></li>
+                        <li><a href="business.html">Add Your Business</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </main>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body></html>

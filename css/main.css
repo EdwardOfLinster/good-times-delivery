@@ -1,0 +1,521 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.wrapper{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+#referal-info{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    background: gold;
+    z-index: 2;
+}
+#referal-info i{
+    flex-basis: 10%;
+}
+#referal-info p{
+    margin: auto;
+    flex-basis: 80%;
+    text-align: center;
+}
+#referal-info a{
+    flex-basis: 10%;
+    height: 25px;
+    text-align: left;
+}
+#referal-info i:hover{
+    color: white;
+}
+
+/* CG: added the header container to contain both gb-nav and gb-head*/
+.header-container{
+    position: relative;
+    overflow: hidden;
+    max-width: 100vw;        
+}
+
+/* CG: absolute is fine here, but had to set z-index because of heading changes*/
+.gb-nav{
+    position: absolute;
+    right: 0vw;
+    top: 6vh;
+    z-index: 50;
+    background-color:gold;
+    padding: 20px;
+}
+.gb-nav .nav-trigger{
+    display: none;
+}
+.gb-nav #nav-close{
+    display: none;
+}
+.gb-nav ul{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color:gold;
+    padding: 20px;
+}
+.gb-nav ul li{
+    padding: 10px 20px;
+}
+.gb-nav ul li a{
+    color: black;
+    padding: 0;
+    text-decoration: none;
+    font-size: 30px;
+}
+.gb-nav ul li a:hover{
+    color: white;
+}
+/* CG: you're orginal version had issues with landscape devices so I did some tinkering 
+    - I wrapped the contrast and her0-text in the hero-image container
+    - the container height is now defined by the text contents
+    - at lower res the contrast takes 100% of the parent
+*/
+.background-contrast{
+    background-color: white;
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+.hero-image{
+    background-image: url(../img/main-hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;    
+}
+/* CG: added z-index because of hero changes, also top/bottom padding */
+.hero-text{
+    position: relative;
+    z-index: 10;
+    padding: 5% 55% 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hero-text img{
+    width: 35vw;
+}
+.hero-text h3{
+    font-size: 40px;
+    margin-top: 50px;
+}
+.hero-text h4{
+    font-size: 30px;
+    margin: 25px 0;
+}
+.hero-text a{
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 12px 17px;
+    background-color: gold;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.service-area-info{
+    background-color: gold;
+    padding: 75px 0;
+}
+.service-area-info .row{
+    text-align: center;
+}
+.service-area-info .row h3{
+    font-size: 35px;
+}
+.service-area-info .row h4{
+    margin: 10px 0;
+    font-size: 30px;
+}
+.service-area-info .row input[type=search]{
+    font-size: 35px;
+    text-align: left;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid black;
+    border-right: none;
+    
+}
+.service-area-info .row input[type=submit]{
+    font-size: 35px;
+    border-radius: 0px 10px 10px 0;
+    background-color: #5c3e9e;
+    color: white;
+    border: 2px solid black;
+    border-left: none;
+}
+#pcodeError{
+    color: red;
+    padding: 20px;
+    transition: 5s ease;
+    display: none;
+    font-size: 20px;
+
+}
+.vendors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.vendors img{
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+}
+.vendors h2{
+    font-size: 30px;
+}
+.areas-serviced h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 600;
+}
+.areas-serviced iframe{
+    width: 100%;
+    height: 600px;
+}
+footer{
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    background-color: gold;
+    
+}
+.footer-logos .main-logo{
+    height: 100px;
+}
+.footer-logos .app-download{
+    margin-top: 20px;
+}
+.footer-logos .app-download img{
+    height: 50px;
+}
+.footer-nav{
+    text-align: right;
+    font-size: 25px;
+}
+.footer-nav ul li{
+    line-height: 1.2;
+}
+.footer-nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+.footer-nav ul li a:hover{
+    color: white;
+}
+@media (max-width: 1440px) { 
+    .hero-text h3{
+        font-size: 30px;
+    }
+    .hero-text h4{
+        font-size: 25px;
+        margin: 15px 0;
+    }
+    .hero-text a{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .gb-nav ul li a{
+        font-size: 25px;
+    }
+    .service-area-info .row h3{
+        font-size: 30px;
+    }
+    .service-area-info .row input[type=submit]{
+        font-size: 30px;
+    }
+    .service-area-info .row input[type=search]{
+        font-size: 30px;
+    }
+    .vendors img{
+        height: 250px;
+        width: 250px;
+    }
+    .areas-serviced iframe{
+        height: 500px;
+    }
+    #referal-info p{
+        font-size: 20px;
+    }
+}
+@media (max-width:1025px){
+    .hero-text h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .hero-text h4{
+        font-size: 18px;
+    }
+    .hero-text a{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #referal-info p{
+        font-size: 18px;
+    }
+    #referal-info i{
+        font-size: 18px;
+    }
+    .gb-nav ul li a{
+        font-size: 20px;
+    }
+    .service-area-info{
+        padding: 50px 0;
+    }
+    .service-area-info .row h3{
+        font-size: 23px;
+    }
+    .service-area-info .row h4{
+        font-size: 20px;
+    }
+    .service-area-info .row input[type=search]{
+        font-size: 25px;
+    }
+    .service-area-info .row input[type=submit]{
+        font-size: 25px;
+    }
+    .vendors img{
+        width: 150px;
+        height: 150px;
+        padding: 40px;
+    }
+    .areas-serviced h2{
+        font-size: 30px;
+    }
+    .areas-serviced iframe{
+        height: 400px;
+    }
+    .footer-logos .main-logo{
+        height: 80px;
+    }
+    .footer-logos .app-download img{
+        height: 40px;
+    }
+    .footer-nav ul li a{
+        font-size: 22px;
+    }
+}
+@media (max-width: 769px) { 
+    
+    /* CG: need to set gb-head to absolute (it's parent is relative) so it shifts up    */
+    .gb-head{
+        position: absolute;
+        top: 0px;        
+    }
+
+    /* CG: however that means you have to fix the height for the container 
+        NOTE: vh is not safe here because of landscape mobile devices
+        - you could consider another adjustment in the smaller vps below
+    */
+    .header-container{
+        min-height: 550px;
+    }
+
+    .hero-image{
+        min-height: 550px;
+    }
+    
+    .hero-text img {
+        width: 60vw;
+    }
+    
+    .hero-text{
+        padding: 5% 10%;
+    }
+    .hero-text h3{
+        font-size: 30px;
+    }
+    .hero-text h4{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .hero-text a{
+        font-size: 30px;
+    }
+    .hero-image{
+        background-image: url("../img/main-hero-image-tablets.jpg");
+    }
+
+    /* CG: 
+        - change to relative
+        - note the top and height because you'll have to make gb-head negative the same amount
+        - also change right offset to left, this means I had to change the JS as well
+    */   
+    .gb-nav{
+        position: relative;
+        z-index: 100;
+        left: calc(100vw - 40px);
+        top: 25px;
+        height: 250px;
+        display: flex;
+        background-color: transparent;
+        padding: 0;
+        transition:right 1s ease;
+    }   
+    
+    .gb-nav .nav-trigger{
+        display: inline;
+        padding-right: 5vw;
+    }
+    .gb-nav.active{
+        left: calc(100vw - 300px);
+    }
+    /* CG: made exactly 50px so I can calc the left offset*/
+    .nav-trigger{
+        width: 15px;
+    }
+    .nav-trigger a{
+        font-size: 5vw;
+    }
+    .nav-trigger #nav-open{
+        display: inline;
+    }
+    #nav-close{
+        font-size: 3vw;
+        display: none;
+    }
+    /* CG: changed width to 80vw so height is more predictable */
+    .gb-nav ul{
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        position:static;
+        background-color:gold;
+        max-width: 300px;
+    }
+    .gb-nav ul li{
+        padding: 10px 20px;
+    }
+    .gb-nav ul li a{
+        color: black;
+        padding: 0;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    .gb-nav ul li a:hover{
+        color: white;
+    }
+    /* CG: changed*/
+    .background-contrast{
+        width: 100%;
+    }
+    .service-area-info .row h3{
+        font-size: 32px;
+    }
+    .service-area-info .row h4{
+        font-size: 28px;
+    }
+    .service-area-info .row input[type=search],.service-area-info .row input[type=submit]{
+        font-size: 32px;
+    }
+    .vendors{
+        padding: 50px 0;
+    }
+    .vendors img{
+        height: 200px;
+        width: 200px;
+    }
+    .areas-serviced h2{
+        margin-top: 0;
+        font-size: 32px;
+    }
+    .areas-serviced iframe{
+        height: 500px;
+    }
+    .footer-nav ul li a {
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 577px) { 
+    footer{
+        align-items: center;
+        flex-flow: column-reverse;
+    }
+    .footer-nav{
+        text-align: center;
+        margin: 50px 0
+    }
+    .footer-nav ul li a {
+        font-size: 25px;
+    }
+    .hero-image{
+        background-image: url("../img/main-hero-image-mobile.jpg");
+    }
+    .hero-text h3 {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    .hero-text h4{
+        font-size: 20px;
+    }
+    .hero-text a{
+        font-size: 24px;
+    }
+    .service-area-info{
+        padding: 50px 15px;
+    }
+    .service-area-info .row h3{
+        font-size: 24px;
+    }
+    .service-area-info .row h4{
+        font-size: 20px;
+    }
+    .service-area-info .row input[type=search], .service-area-info .row input[type=submit]{
+        font-size: 24px;
+    }
+    .areas-serviced h2{
+        font-size: 26px;
+    }
+    .areas-serviced iframe{
+        height: 450px;
+    }
+    .gb-nav .nav-trigger{
+        padding-right: 8vw;;
+    }
+    .gb-nav{
+        right: -50vw;
+    }
+}
+@media (max-width: 481px) { 
+    .vendors img{
+        width: 80%;
+        height: 80%;
+    }
+    .footer-nav{
+        margin: 25px 0;
+    }
+    #referal-info p{
+        font-size: 4vw;
+    }
+    .gb-nav{
+        right: -55vw;
+    }
+    .nav-trigger a{
+        font-size: 25px;
+    }
+    #nav-close{
+        font-size: 20px;
+    }
+}
+
+
+
+
+

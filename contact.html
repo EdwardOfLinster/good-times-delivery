@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Times | Get Help</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-logo">
+            <img src="img/logo.png" alt="Happy Times Logo -Illustrated by (brycemaloney.ca)">
+        </div>
+        <div class="nav-trig">
+            <i></i>
+        </div>
+        <nav class="gb-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="featured">Get Help</a></li>
+                <li><a href="business.html">Add Your Business</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero-banner contact">
+        <h2 class="gold thictext">We're here to Help!</h2>
+    </section>
+    <section class="form-help">
+        <h3>How can we Help you</h3>
+        <div class="accordion">
+            <div class="accordion__header is-active">
+                <h4>Orders</h4>
+            </div>
+            <div class="accordion__body is-active">
+                <form>
+                    <div class="form-row flex">
+                        <label for="name" class="form-left">Name</label>
+                        <input class="form-right" type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-row flex">
+                        <label for="email" class="form-left">Email</label>
+                        <input class="form-right" type="email" id="email" name="email" placeholder="bryce@goodtimes.com" required>
+                    </div>
+                    <div class="form-row flex">
+                        <div class="form-left"></div>
+                        <div class="form-right radio">
+                            <input type="radio" id="orderOngoing" name="orderStatus" value="ongoing" required>
+                            <label for="orderOngoing">Ongoing Order</label>
+                            <input type="radio" id="orderPast" name="orderStatus" value="orderPast" required>
+                            <label for="orderPast">Past Order</label>
+                        </div> 
+                    </div>    
+                    <div class="form-row flex">
+                        <label class="form-left" for="orderID">Order ID</label>
+                        <input class="form-right" type="text" id="orderID" name="orderID" placeholder="######" maxlength="6" required>
+                    </div>
+                    <div class="form-row flex">
+                        <label for="reason" class="form-left">Action</label>
+                        <select id="reason" name="reason" class="form-right" required>
+                            <option value="wrong/miss_items">Wrong or Missing items</option>
+                            <option value="cancel_order">Cancel my Order</option>
+                            <option value="long_order">My Order Took Longer than Expected</option>
+                            <option value="promocode_help">Promo Code didn't apply</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-row flex">
+                        <label class="form-left" for="message">Message</label><br>
+                        <textarea id="message" name="message" class="form-right textarea" rows="4" required></textarea>
+                        </textarea>
+                    </div>
+                    <input type="submit" >
+                </form>
+            </div>
+
+            <div class="accordion__header">
+                <h4>Billing</h4>
+            </div>
+            <div class="accordion__body">
+                <form>
+                    <div class="form-row flex">
+                        <label for="name" class="form-left">Name</label>
+                        <input class="form-right" type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-row flex">
+                        <label for="email" class="form-left">Email</label>
+                        <input class="form-right" type="email" id="email" name="email" placeholder="bryce@goodtimes.com">
+                    </div>    
+                    <div class="form-row flex">
+                        <label class="form-left" for="orderID">Order ID</label>
+                        <input class="form-right" type="text" id="orderID" name="orderID" placeholder="######" maxlength="6">
+                    </div>
+                    <div class="form-row flex">
+                        <label for="reason" class="form-left">Action</label>
+                        <select id="reason" name="reason" class="form-right">
+                            <option value="payment">Payment Issue</option>
+                            <option value="change_payment">Change payment on existing Order</option>
+                            <option value="referal_coupon">Referal Coupon</option>
+                            <option value="promocode_help">Promo Code didn't apply</option>
+                        </select>
+                    </div>
+                    <div class="form-row flex">
+                        <label class="form-left" for="message">Message</label><br>
+                        <textarea id="message" name="message" class="form-right textarea" rows="4"></textarea>
+                        </textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="accordion__header">
+                <h4>Accessibility</h4>
+            </div>
+            <div class="accordion__body">
+                <form>
+                    <div class="form-row flex">
+                        <label for="name" class="form-left">Name</label>
+                        <input class="form-right" type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-row flex">
+                        <label for="email" class="form-left">Email</label>
+                        <input class="form-right" type="email" id="email" name="email" placeholder="bryce@goodtimes.com">
+                    </div>    
+                    <div class="form-row flex">
+                        <label for="reason" class="form-left">Action</label>
+                        <select id="reason" name="reason" class="form-right">
+                            <option value="payment">Login Issues</option>
+                            <option value="change_payment">Delete my account</option>
+                            <option value="referal_coupon">Broken Pages</option>
+                            <option value="promocode_help">Locked out of Account</option>
+                        </select>
+                    </div>
+                    <div class="form-row flex">
+                        <label class="form-left" for="message">Tell us what happened</label><br>
+                        <textarea id="message" name="message" class="form-right textarea" rows="4"></textarea>
+                        </textarea>
+                    </div>
+                </form>        
+            </div>
+            <div class="accordion__header">
+                <h4>Need something else?
+                </h4>
+            </div>
+            <div class="accordion__body">
+                <form>
+                    <div class="form-row flex">
+                        <label for="name" class="form-left">Name</label>
+                        <input class="form-right" type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-row flex">
+                        <label for="email" class="form-left">Email</label>
+                        <input class="form-right" type="email" id="email" name="email" placeholder="bryce@goodtimes.com">
+                    </div>    
+                    <div class="form-row flex">
+                        <label class="form-left" for="message">Message</label><br>
+                        <textarea id="message" name="message" class="form-right textarea" rows="4"></textarea>
+                        </textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logos">
+            <img src="img/white-logo.png" class="main-logo">
+            <div class="app-download">
+                <img src="img/800px-Download_on_the_App_Store_Badge.svg.png">
+                <img src="img/en_badge_web_generic.png">
+            </div>
+        </div>
+        <div class="footer-nav">
+            <nav> 
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" class="featured-inv">Get Help</a></li>
+                    <li><a href="business.html">Add Your Business</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/secondary.js"></script>
+</html>
